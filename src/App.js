@@ -1,5 +1,5 @@
 import React, { useEffect, Suspense, lazy } from 'react';
-import './Theme2.css';
+import './Theme1.css';
 import TodoList from './components/TodoList';
 import { TYPE_OF_THEME } from './enum';
 
