@@ -16,6 +16,7 @@ The purpose of this project was to get familiar with React.
 ### Getting Started
 
 Click the demo link or clone/download the repository on your local machine.
+You can switch between themes by changing the import in App.js to either `./Theme1.css` or `./Theme2.css`
 
 ##### Install dependencies
 
