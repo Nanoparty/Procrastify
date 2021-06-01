@@ -1,0 +1,6 @@
+const TYPE_OF_THEME = {
+	DEFAULT_MODE: 1,
+	CUSTOM_MODE: 2,
+}
+
+export {TYPE_OF_THEME};

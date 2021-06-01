@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, Suspense, lazy } from 'react';
+import './Theme2.css';
+import TodoList from './components/TodoList';
+import { TYPE_OF_THEME } from './enum';
+
+const CustomTheme = React.lazy(() => import('./themes/customTheme'));
+const DefaultTheme = React.lazy(() => import('./themes/defaultTheme'));
+
+const ThemeSelector = ({ children }) => {
+  const CHOSEN_THEME = localStorage.getItem('TYPE_OF_THEME') || TYPE_OF_THEME.CUSTOM_MODE;
+  console.log("THEME", CHOSEN_THEME)
+  return (
+    <>
+      <React.Suspense fallback={<></>}>
+        {(CHOSEN_THEME === TYPE_OF_THEME.DEFAULT_MODE) && <DefaultTheme />}
+        {(CHOSEN_THEME === TYPE_OF_THEME.CUSTOM_MODE) && <DefaultTheme />}
+      </React.Suspense>
+      {children}
+    </>
+  )
+}
 
 function App() {
+
+  const changeTheme = () => {
+    localStorage.setItem('TYPE_OF_THEME', 2);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg">
+    <div className="pattern">
+      <div className="todo-app">
+        {/* <button onClick={changeTheme}>Change Theme</button> */}
+        <TodoList />
+      </div>
     </div>
+  </div>
+    
   );
 }
 
