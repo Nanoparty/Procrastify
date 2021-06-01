@@ -1,7 +1,7 @@
 # Procrastify
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![image](https://user-images.githubusercontent.com/39596241/120264711-5861e800-c26c-11eb-9df2-7d3b11aff2ca.png)![image](https://user-images.githubusercontent.com/39596241/120264801-8ba47700-c26c-11eb-8e43-db9cb10ec783.png)
+![image](https://user-images.githubusercontent.com/39596241/120264887-c1e1f680-c26c-11eb-97e0-dfac7d4d09fd.png)
 
 
 
