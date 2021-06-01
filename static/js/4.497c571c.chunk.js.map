@@ -1,1 +1,0 @@
-{"version":3,"sources":["themes/defaultTheme.js"],"names":["Theme","Fragment"],"mappings":"6GAAA,0CAKeA,UAFD,kBAAO,cAAC,IAAMC,SAAP","file":"static/js/4.497c571c.chunk.js","sourcesContent":["import React from 'react';\r\nimport '../Theme1.css';\r\n\r\nconst Theme = () => (<React.Fragment></React.Fragment>);\r\n\r\nexport default Theme;"],"sourceRoot":""}
